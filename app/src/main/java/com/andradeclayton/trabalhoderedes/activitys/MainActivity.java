@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.andradeclayton.trabalhoderedes.R;
 import com.andradeclayton.trabalhoderedes.models.QuantidadeMedicacao;
+import com.andradeclayton.trabalhoderedes.services.AcessoServidorSockets;
 import com.andradeclayton.trabalhoderedes.services.QuantidadeMedicacaoService;
 
 import retrofit2.Call;
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public String RequestConsulta(QuantidadeMedicacao quantidadeMedicacao){
+    /*public String RequestConsulta(QuantidadeMedicacao quantidadeMedicacao){
 
         final String[] resposta = new String[1];
         final String respostaRequest = "A medida nào pode ser calculada";
@@ -114,9 +115,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         return respostaRequest;
-    }
+    }*/
 
     public void CalcularDosagem(View view) {
+        AcessoServidorSockets acessoServidorSockets = new AcessoServidorSockets();
+        String mensagem;
 
+        mensagem = faixa_etaria + " " + medicamento + " " + edt_peso_paciente.getText().toString();
+        acessoServidorSockets.sendMessage(mensagem);
     }
 }
