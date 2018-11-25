@@ -9,6 +9,16 @@
     android:orientation="vertical"
     android:padding="5dp">
 
+    <EditText
+        android:id="@+id/edt_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:digits="1234567890.,"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:hint="@string/edt_ip"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,15 +64,6 @@
         </Spinner>
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/edt_peso_paciente"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:digits="1234567890.,"
-        android:inputType="numberDecimal"
-        android:hint="@string/edt_peso_paciente"/>
-
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
@@ -78,6 +79,6 @@
         android:textSize="20dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:text="Hello World!"/>
+        android:text="@string/txv_dosagem"/>
 
 </LinearLayout>

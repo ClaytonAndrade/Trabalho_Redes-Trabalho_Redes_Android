@@ -2,8 +2,9 @@
     <string name="app_name">Trabalho de Redes</string>
     <string name="txv_faixa_etaria">Faixa Etária</string>
     <string name="txv_tipo_medicamento">Medicamento</string>
-    <string name="edt_peso_paciente">Peso Paciente</string>
+    <string name="edt_ip">Digite IP EX: 10.0.0.1</string>
     <string name="btn_calcular">Calcular Dosagem</string>
+    <string name="txv_dosagem">Dosagem</string>
 
     <string-array name="faixa_etaria">
         <item> Crianças </item>
@@ -15,8 +16,6 @@
         <item> Dipirona </item>
         <item> Paracetamol </item>
         <item> Dramin </item>
-        <item> Cimeticona </item>
-        <item> Luftal </item>
     </string-array>
 
 </resources>
